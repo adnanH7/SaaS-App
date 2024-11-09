@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block head_title %}{{page_title}}-{{block.super}}{% endblock head_title %}
+{% block content %}
+{{page_title}}
+{% comment %} {% include "snippets/welcome-user-msg.html" %} {% endcomment %}
+<p>page visits = {{page_visit_count}}</p>
+<p>total visits = {{total_visit_count}}</p>
+{% endblock content %}
+
+
+
+
+
+
+
+
+{% comment %} <!DOCTYPE html>
+<html>
+    <body>
+        <h1>{{page_title}}</h1>
+        <p>{{request.user}}</p>
+        <p>{{request.method}}</p>
+    </body>
+</html> {% endcomment %}
